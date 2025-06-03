@@ -1,0 +1,32 @@
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite / Build artifacts
+dist/
+.vite/
+*.log
+
+# Env files (si en el futuro agregamos secrets)
+.env
+.env.local
+
+# Editor folders
+.idea/
+.vscode/
+*.swp
+
+# Backend local data (ejemplo si queremos excluir temporales en /api)
+api/*.json
+
+# Optional: Ignore lockfiles (si no deseas trackear los package-lock)
+package-lock.json
+
+# Coverage reports
+coverage/
