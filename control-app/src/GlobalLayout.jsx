@@ -10,7 +10,6 @@ function GlobalLayout() {
     return (
         <div>
             {showHomeButton && <HomeButton />}
-            <br/>
             <Outlet />
         </div>
     );
