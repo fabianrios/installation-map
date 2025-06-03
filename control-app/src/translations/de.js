@@ -11,6 +11,8 @@ const de = {
     filterArtist: "Nach Künstler filtern:",
     focus: "Fokussieren",
     viewDetails: "Details anzeigen",
+    back: "Zurück",
+    loading: "Laden...",
 };
 
 export default de;

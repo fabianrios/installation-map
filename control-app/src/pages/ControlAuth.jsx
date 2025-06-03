@@ -18,7 +18,7 @@ function ControlAuth() {
         if (answer.trim().toLowerCase() === correctAnswer) {
             navigate('/control');
         } else {
-            setError(t('error'));
+            setError(t.error);
         }
     };
 

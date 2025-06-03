@@ -11,6 +11,8 @@ const es = {
     filterArtist: "Filtrar por artista:",
     focus: "Enfocar",
     viewDetails: "Ver detalles",
+    back: "Volver",
+    loading: "Cargando...",
 };
 
 export default es;
