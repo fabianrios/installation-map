@@ -53,7 +53,7 @@ function App() {
                           <div style="max-width: 500px; width: 90vw; display: flex; flex-direction: column;">
                             <h3 style="margin: 0 0 10px 0;">${c.nombre}</h3>
                             <div style="position:relative;">
-                              <img src="${c.imagen}" style="width: 100%; height: auto; max-height: 300px; border-radius: 5px; object-fit: cover;" />
+                              <img src="${url}:5001${c.imagen}"  style="width: 100%; height: auto; max-height: 300px; border-radius: 5px; object-fit: cover;" />
                               <div style="position:absolute; bottom:7px; right:5px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.8em; padding: 3px 6px; border-radius: 3px;">
                                 ${c.creditos || ""}
                               </div>

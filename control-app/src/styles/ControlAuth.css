@@ -1,0 +1,43 @@
+.auth-container {
+    padding: 50px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.auth-riddle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-input {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background-color: #555;
+}
+
+.auth-error {
+    color: red;
+    margin-top: 10px;
+}

@@ -1,0 +1,45 @@
+.mode-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    padding:  0 50px;
+    text-align: left;
+}
+
+.mode-button-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    gap: 20px;
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+h1 {
+    text-align: center;
+    @media (min-width: 600px) {
+        text-align: left;
+    }
+}
+
+.mode-button {
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+    min-width: 220px;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.mode-button:hover {
+    background-color: #555;
+}

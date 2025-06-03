@@ -11,6 +11,16 @@ app.use(express.json());
 
 let data = [];
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Esto es para resolver __dirname correctamente en ESModules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Sirve la carpeta de imágenes:
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
 async function loadData() {
     const file = await fs.readFile('cases.json', 'utf-8');
     data = JSON.parse(file);
@@ -23,6 +33,16 @@ const wsClients = new Set();
 app.get('/cases', (req, res) => {
     const published = data.filter(c => c.publicado !== false);
     res.json(published);
+});
+
+// make /cases/id return a single case
+app.get('/cases/:id', (req, res) => {
+    const caseId = parseInt(req.params.id, 10);
+    const mural = data.find(c => c.id === caseId);
+    if (!mural) {
+        return res.status(404).json({ error: 'Case not found' });
+    }
+    res.json(mural);
 });
 
 app.post('/focus', (req, res) => {
