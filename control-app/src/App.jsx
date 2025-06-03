@@ -6,6 +6,7 @@ import MuralDetail from './pages/MuralDetail';
 import ControlAuth from './pages/ControlAuth';
 import GlobalLayout from './GlobalLayout';
 
+
 function App() {
     return (
         <Router>
