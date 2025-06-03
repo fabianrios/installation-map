@@ -112,7 +112,7 @@ function App() {
                 padding: '10px',
                 borderRadius: '8px'
             }}>
-                <QRCodeSVG value={`${LocalIpFromControllerWithPort}`} size={128} fgColor={'#ffffff'} bgColor={'#454545'} title={"Steuerung öffnen"} />,
+                <QRCodeSVG value={`${LocalIpFromControllerWithPort}`} size={128} fgColor={'#000000'} bgColor={'#ffffff'} title={"Steuerung öffnen"} />,
                 <div style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center' }}>
                     🎛 Steuerung öffnen
                 </div>
