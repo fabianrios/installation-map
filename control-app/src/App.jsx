@@ -9,7 +9,7 @@ function App() {
 
 
     useEffect(() => {
-        fetch('http://192.168.178.196:5001/cases')
+        fetch('http://192.168.178.178:5001/cases')
             .then(res => res.json())
             .then(data => {
                 setCases(data);
@@ -18,7 +18,7 @@ function App() {
     }, [])
 
     const focus = (c) => {
-        fetch('http://192.168.178.196:5001/focus', {
+        fetch('http://192.168.178.178:5001/focus', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: c.id, lat: c.lat, lng: c.lng, nombre: c.nombre })
@@ -39,7 +39,7 @@ function App() {
 
     return (
         <div style={{ padding: '20px' }}>
-            <h1>Street Art Control</h1>
+            <h1>Interactive Map Control</h1>
 
 
             {/* FILTRO DE CIUDADES */}

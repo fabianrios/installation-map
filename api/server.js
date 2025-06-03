@@ -36,8 +36,8 @@ app.post('/focus', (req, res) => {
     res.json({ status: 'ok' });
 });
 
-const server = app.listen(PORT, () => {
-    console.log(`API running at http://192.168.178.196:${PORT}`);
+const server = app.listen(PORT,'192.168.178.178', () => {
+    console.log(`API running at http://192.168.178.178':${PORT}`);
 });
 
 // WebSocket server

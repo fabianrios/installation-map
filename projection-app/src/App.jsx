@@ -8,6 +8,8 @@ import './App.css'
 
 const port = 5001
 const api_key = import.meta.env.VITE_MAPBOX_API_KEY;
+let url = 'http://192.168.178.178';
+const LocalIpFromControllerWithPort = 'http://192.168.178.178:5173/';
 
 const sprayDotSVG = (color) => `
 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +43,7 @@ function App() {
         });
 
         mapRef.current.on('load', () => {
-            fetch(`http://192.168.178.196:${port}/cases`)
+            fetch(`${url}:${port}/cases`)
                 .then(res => res.json())
                 .then(fetchedCases => {
                     setCases(fetchedCases);
@@ -80,7 +82,7 @@ function App() {
                 });
 
             // Iniciar WebSocket después de cargar todo
-            const ws = new WebSocket(`ws://192.168.178.196:${port}`);
+            const ws = new WebSocket(`ws://192.168.178.178:${port}`);
             ws.onmessage = (message) => {
                 const focus = JSON.parse(message.data);
                 mapRef.current.flyTo({
@@ -110,7 +112,7 @@ function App() {
                 padding: '10px',
                 borderRadius: '8px'
             }}>
-                <QRCodeSVG value="http://192.168.178.196:5173" size={128} fgColor={'#ffffff'} bgColor={'#454545'} title={"Steuerung öffnen"} />,
+                <QRCodeSVG value={`${LocalIpFromControllerWithPort}`} size={128} fgColor={'#ffffff'} bgColor={'#454545'} title={"Steuerung öffnen"} />,
                 <div style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center' }}>
                     🎛 Steuerung öffnen
                 </div>
