@@ -1,0 +1,14 @@
+h3 {
+    margin: 0 0 10px 0;
+}
+
+.case-card {
+    display: flex;
+    min-height: 450px;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}

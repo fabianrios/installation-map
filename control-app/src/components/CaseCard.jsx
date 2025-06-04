@@ -1,22 +1,26 @@
+// import the caseCard.css and apply it to the component
+import '../styles/CaseCard.css'; // Assuming you have a CSS file for styles
+
+
+
 function CaseCard({ c, onFocus }) {
-    const truncatedDetalle = c.detalle.split(" ").slice(0, 30).join(" ") + (c.detalle.split(" ").length > 30 ? "…" : "");
+    const truncatedDetalle = c.detalle.split(" ").slice(0, 20).join(" ") + (c.detalle.split(" ").length > 20 ? "…" : "");
 
     return (
-        <div style={{ border: '1px solid #ccc', borderRadius: '8px', padding: '15px', background: '#fafafa' }}>
+        <div className="case-card">
             <h3>{c.nombre}</h3>
+            <div
+                style={{
+                    width: '100%',
+                    height: '200px',
+                    backgroundImage: `url(http://${window.location.hostname}:5001${c.imagen})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    borderRadius: '8px',
+                    marginBottom: '10px',
+                }}
+            ></div>
             <p style={{ margin: '5px 0', color: '#555' }}>{c.lugar} • {c.año}</p>
-
-            <div style={{
-                display: 'inline-block',
-                backgroundColor: '#333',
-                color: '#fff',
-                padding: '3px 8px',
-                borderRadius: '5px',
-                marginBottom: '10px',
-                fontSize: '0.85rem'
-            }}>
-                {c.tipo}
-            </div>
 
             <p style={{ fontSize: '0.9rem', color: '#666' }}>{truncatedDetalle}</p>
 

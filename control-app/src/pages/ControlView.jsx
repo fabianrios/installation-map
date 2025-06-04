@@ -6,8 +6,8 @@ import CaseCard from '../components/CaseCard';
 function ControlView() {
     const [cases, setCases] = useState([]);
     const [filtered, setFiltered] = useState([]);
-    const [selectedLugar, setSelectedLugar] = useState("Todos");
-    const [selectedArtista, setSelectedArtista] = useState("Todos");
+    const [selectedLugar, setSelectedLugar] = useState("All");
+    const [selectedArtista, setSelectedArtista] = useState("All");
 
     useEffect(() => {
         fetch(`http://${window.location.hostname}:5001/cases`)
@@ -26,15 +26,15 @@ function ControlView() {
         })
     }
 
-    const lugares = ["Todos", ...Array.from(new Set(cases.map(c => c.lugar)))];
-    const artistas = ["Todos", ...Array.from(new Set(cases.map(c => c.creditos)))];
+    const lugares = ["All", ...Array.from(new Set(cases.map(c => c.lugar)))];
+    const artistas = ["All", ...Array.from(new Set(cases.map(c => c.creditos)))];
 
     const handleFilter = (lugar, artista) => {
         setSelectedLugar(lugar);
         setSelectedArtista(artista);
         let result = cases;
-        if (lugar !== "Todos") result = result.filter(c => c.lugar === lugar);
-        if (artista !== "Todos") result = result.filter(c => c.creditos === artista);
+        if (lugar !== "All") result = result.filter(c => c.lugar === lugar);
+        if (artista !== "All") result = result.filter(c => c.creditos === artista);
         setFiltered(result);
     };
 

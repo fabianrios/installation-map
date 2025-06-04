@@ -9,6 +9,20 @@ const PORT = 5001;
 app.use(cors());
 app.use(express.json());
 
+import os from 'os';
+
+const getLocalIPAddress = () => {
+    const interfaces = os.networkInterfaces();
+    for (const name of Object.keys(interfaces)) {
+        for (const iface of interfaces[name]) {
+            if (iface.family === 'IPv4' && !iface.internal) {
+                return iface.address;
+            }
+        }
+    }
+    return '127.0.0.1'; // Fallback to localhost
+};
+
 let data = [];
 
 import path from 'path';
@@ -56,8 +70,8 @@ app.post('/focus', (req, res) => {
     res.json({ status: 'ok' });
 });
 
-const server = app.listen(PORT,'192.168.178.178', () => {
-    console.log(`API running at http://192.168.178.178':${PORT}`);
+const server = app.listen(PORT, getLocalIPAddress(), () => {
+    console.log(`API running at http://${getLocalIPAddress()}:${PORT}`);
 });
 
 // WebSocket server

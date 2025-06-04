@@ -8,8 +8,9 @@ import './App.css'
 
 const port = 5001
 const api_key = import.meta.env.VITE_MAPBOX_API_KEY;
-let url = 'http://192.168.178.178';
-const LocalIpFromControllerWithPort = 'http://192.168.178.178:5173/';
+const numberIP = '192.168.178.179'
+let url = 'http://'+numberIP;
+const LocalIpFromControllerWithPort = 'http://'+numberIP+':5173/';
 
 const sprayDotSVG = (color) => `
 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -51,17 +52,13 @@ function App() {
                         const color = tipoColores[c.tipo] || tipoColores["Otro"];
                         const popupContent = `
                           <div style="max-width: 500px; width: 90vw; display: flex; flex-direction: column;">
-                            <h3 style="margin: 0 0 10px 0;">${c.nombre}</h3>
-                            <div style="position:relative;">
+                            <h3>${c.creditos || ""}</h3>
+                            <h4>${c.nombre} ${c.fecha ? "-" + c.año : ""}</h4>
+                            <div style="position:relative; margin-top: 10px;">
                               <img src="${url}:5001${c.imagen}"  style="width: 100%; height: auto; max-height: 300px; border-radius: 5px; object-fit: cover;" />
-                              <div style="position:absolute; bottom:7px; right:5px; background: rgba(0,0,0,0.7); color: #fff; font-size: 0.8em; padding: 3px 6px; border-radius: 3px;">
-                                ${c.creditos || ""}
-                              </div>
                             </div>
-                            <p style="margin-top: 10px;">${c.detalle}</p>
-                            <div style="background:${color}; color:#fff; padding:5px 10px; border-radius:5px; font-weight:bold; margin-bottom:10px; text-align:center;">
-                              ${c.tipo}
-                            </div>
+                            <p class="detalle">${c.detalle}</p>
+                            <p style="margin-top: 5px; font-size: 0.9em; color: #666; margin-bottom: 0;">${c.ubicacion}</p>
                           </div>
                         `;
                         const el = document.createElement('div');
@@ -70,7 +67,12 @@ function App() {
                         el.style.height = '40px';
                         el.style.cursor = 'pointer';
 
-                        const popup = new mapboxgl.Popup().setHTML(popupContent);
+                        const popup = new mapboxgl.Popup({
+                            offset: [0, -20], // Adjusts the popup position to stay visible
+                            maxWidth: '500px',
+                            closeButton: false,
+                            className: 'toxic-popup',
+                        }).setHTML(popupContent);
 
                         const marker = new mapboxgl.Marker({ element: el })
                             .setLngLat([c.lng, c.lat])
@@ -82,11 +84,12 @@ function App() {
                 });
 
             // Iniciar WebSocket después de cargar todo
-            const ws = new WebSocket(`ws://192.168.178.178:${port}`);
+            const ws = new WebSocket(`ws://${numberIP}:${port}`);
             ws.onmessage = (message) => {
                 const focus = JSON.parse(message.data);
+                const offsetLat = 0.01; // Adjust this value to move the map slightly upward
                 mapRef.current.flyTo({
-                    center: [focus.lng, focus.lat],
+                    center: [focus.lng, focus.lat + offsetLat],
                     zoom: 13,
                     speed: 0.8
                 });
