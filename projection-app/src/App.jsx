@@ -114,7 +114,7 @@ function App() {
             }}>
                 <QRCodeSVG value={`https://installation-map-controller.onrender.com/`} size={128} fgColor={'#000000'} bgColor={'#ffffff'} title={"Open Controller"} />,
                 <div style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center' }}>
-                    🎛 Steuerung öffnen
+                    🎛 Open Controller
                 </div>
             </div>
         </>
