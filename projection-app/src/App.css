@@ -8,9 +8,13 @@
 
 .toxic-popup.mapboxgl-popup.mapboxgl-popup-anchor-top {
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 10px;
   transform: none !important;
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  display: none !important;
 }
 
 .mapboxgl-popup-content {
