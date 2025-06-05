@@ -22,9 +22,6 @@ dist/
 .vscode/
 *.swp
 
-# Backend local data (ejemplo si queremos excluir temporales en /api)
-api/*.json
-
 # Optional: Ignore lockfiles (si no deseas trackear los package-lock)
 package-lock.json
 
