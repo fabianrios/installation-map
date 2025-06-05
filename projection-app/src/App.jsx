@@ -35,7 +35,7 @@ function App() {
         mapboxgl.accessToken = api_key;
         mapRef.current = new mapboxgl.Map({
             container: mapContainerRef.current,
-            style: 'mapbox://styles/mapbox/dark-v10',
+            style: 'mapbox://styles/fabianrios/cjfh05zgy5en32ro48cjoyq9z',
             center: [-74.0, 4.6],
             zoom: 5
         });
