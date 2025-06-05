@@ -6,7 +6,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 import './App.css'
 
-const wss_url = 'installation-map-api.onrender.com'
+const wss_url = 'installation-map.onrender.com'
 const api_key = import.meta.env.VITE_MAPBOX_API_KEY;
 
 const sprayDotSVG = (color) => `
