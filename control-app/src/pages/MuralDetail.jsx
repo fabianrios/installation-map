@@ -27,7 +27,7 @@ function MuralDetail() {
             <h2>{mural.nombre}</h2>
             <p><b>{mural.lugar}</b> ({mural.año})</p>
             <img
-                src={`http://${window.location.hostname}:5001${mural.imagen}`}
+                src={`${import.meta.env.VITE_API_URL}${mural.imagen}`}
                 alt={mural.nombre}
                 style={{ maxWidth: '100%', borderRadius: '10px', marginBottom: '20px' }}
             />

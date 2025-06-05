@@ -13,7 +13,7 @@ function CaseCard({ c, onFocus }) {
                 style={{
                     width: '100%',
                     height: '200px',
-                    backgroundImage: `url(http://${window.location.hostname}:5001${c.imagen})`,
+                    backgroundImage: `url(${import.meta.env.VITE_API_URL}${c.imagen})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     borderRadius: '8px',
