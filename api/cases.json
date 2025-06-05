@@ -76,7 +76,7 @@
     "detalle": "Mural colectivo que expresa el deseo de paz durante las negociaciones entre el gobierno y las FARC.",
     "tipo": "Street Art",
     "creditos": "Seb Toussaint",
-    "imagen": "/images/paz_mural.png"
+    "imagen": "/images/paz_mural.jpg"
   },
   {
     "id": 7,
@@ -102,7 +102,7 @@
     "detalle": "Mural de Santos Sepulcros que representa la memoria colectiva de las víctimas del conflicto armado.",
     "tipo": "Street Art",
     "creditos": "Santos Sepulcros",
-    "imagen": "/images/santos_sepulcros_mural.png"
+    "imagen": "/images/santos_sepulcros_mural.jpg"
   },
   {
     "id": 11,
@@ -115,7 +115,7 @@
     "detalle": "Mural de Elliot Tupac que representa la esperanza y resiliencia de las comunidades urbanas.",
     "tipo": "Street Art",
     "creditos": "Elliot Tupac",
-    "imagen": "/images/tejiendo_esperanza.png"
+    "imagen": "/images/tejiendo_esperanza.jpg"
   },
   {
     "id": 12,
@@ -128,7 +128,7 @@
     "detalle": "Mural que representa las huellas de la memoria y la resistencia, creado por Bicromo, también rinde homenaje a Jaime Garzón, comediante asesinado.",
     "tipo": "Street Art",
     "creditos": "Bicromo, Un pueblo un mural, Fonso",
-    "imagen": "/images/pisadas.png"
+    "imagen": "/images/pisadas.jpg"
   },
   {
     "id": 13,
@@ -141,7 +141,7 @@
     "detalle": "Mural de DjLu que representa una crítica social a través de su característico estilo stencil.",
     "tipo": "Street Art",
     "creditos": "DjLu",
-    "imagen": "/images/el_conde.png"
+    "imagen": "/images/el_conde.jpg"
   },
   {
     "id": 14,
@@ -167,7 +167,7 @@
     "detalle": "Mural de DjLu que critica el impacto ambiental del uso de combustibles fósiles.",
     "tipo": "Street Art",
     "creditos": "DjLu",
-    "imagen": "/images/combustible_fosil.png"
+    "imagen": "/images/combustible_fosil.jpg"
   },
   {
     "id": 16,
@@ -180,7 +180,7 @@
     "detalle": "Mural colaborativo de Ceroker, DjLu y Toxicómano que promueve un mensaje de no violencia y respeto.",
     "tipo": "Street Art",
     "creditos": "Ceroker, DjLu, Toxicómano",
-    "imagen": "/images/cero_maltrato.png"
+    "imagen": "/images/cero_maltrato.jpg"
   },
   {
     "id": 17,
@@ -219,7 +219,7 @@
     "detalle": "Mural de Toxicómano Callejero que transmite un mensaje de calma y tranquilidad con su característico estilo urbano.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
-    "imagen": "/images/take_it_easy.png"
+    "imagen": "/images/take_it_easy.jpg"
   },
   {
     "id": 20,
@@ -297,7 +297,7 @@
     "detalle": "Mural de Toxicómano Callejero que enfatiza la importancia de estar preparado con argumentos en cualquier situación, con su característico estilo urbano.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
-    "imagen": "/images/arguments.jpeg"
+    "imagen": "/images/arguments.jpg"
   },
   {
     "id": 26,
@@ -310,7 +310,7 @@
     "detalle": "Mural de Toxicómano Callejero que utiliza el arte urbano como medio para desafiar los estándares sociales y culturales, destacando la importancia del mestizaje.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
-    "imagen": "/images/mestizaje.jpeg"
+    "imagen": "/images/mestizaje.jpg"
   },
   {
     "id": 28,
@@ -349,7 +349,7 @@
     "detalle": "Mural de Toxicómano Callejero que destaca la lucha de los migrantes con el mensaje “Nadie es ilegal en tierra robada”. La obra refleja cómo la distancia no borra las raíces y cómo la migración es una necesidad para muchos, no una elección.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
-    "imagen": "/images/emigro_luego_existo.png"
+    "imagen": "/images/emigro_luego_existo.jpg"
   },
   {
     "id": 31,
@@ -362,7 +362,7 @@
     "detalle": "Mural de Toxicómano Callejero que critica el colonialismo y sus consecuencias con mensajes como 'Sin reyes - sin esclavitud - sin saqueo'. La obra utiliza elementos visuales y textuales para reflexionar sobre la discriminación, la xenofobia y la pérdida de dialectos y culturas ancestrales.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
-    "imagen": "/images/anticolonial.png"
+    "imagen": "/images/anticolonial.jpg"
   },
   {
     "id": 32,
