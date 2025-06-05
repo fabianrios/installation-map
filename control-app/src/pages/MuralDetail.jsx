@@ -10,7 +10,7 @@ function MuralDetail() {
     const t = useTranslation();
 
     useEffect(() => {
-        fetch(`http://${window.location.hostname}:5001/cases/${id}`)
+        fetch(`${import.meta.env.VITE_API_URL}/cases/${id}`)
             .then(res => res.json())
             .then(data => {
                 setMural(data);

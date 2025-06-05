@@ -4,6 +4,7 @@ import FilterBar from '../components/FilterBar';
 import { FaEye } from 'react-icons/fa';
 import CaseCard from '../components/CaseCard';
 
+
 function VisitorView() {
     const [cases, setCases] = useState([]);
     const [filtered, setFiltered] = useState([]);
@@ -12,7 +13,7 @@ function VisitorView() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://${window.location.hostname}:5001/cases`)
+        fetch(`${import.meta.env.VITE_API_URL}/cases`)
             .then(res => res.json())
             .then(data => {
                 setCases(data);

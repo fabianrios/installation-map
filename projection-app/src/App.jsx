@@ -6,11 +6,8 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 import './App.css'
 
-const port = 5001
+const wss_url = 'installation-map-api.onrender.com'
 const api_key = import.meta.env.VITE_MAPBOX_API_KEY;
-const numberIP = '192.168.178.179'
-let url = 'http://'+numberIP;
-const LocalIpFromControllerWithPort = 'http://'+numberIP+':5173/';
 
 const sprayDotSVG = (color) => `
 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +41,7 @@ function App() {
         });
 
         mapRef.current.on('load', () => {
-            fetch(`${url}:${port}/cases`)
+            fetch(`${import.meta.env.VITE_API_URL}/cases`)
                 .then(res => res.json())
                 .then(fetchedCases => {
                     setCases(fetchedCases);
@@ -55,7 +52,7 @@ function App() {
                             <h3>${c.creditos || ""}</h3>
                             <h4>${c.nombre} ${c.fecha ? "-" + c.año : ""}</h4>
                             <div style="position:relative; margin-top: 10px;">
-                              <img src="${url}:5001${c.imagen}"  style="width: 100%; height: auto; max-height: 300px; border-radius: 5px; object-fit: cover;" />
+                              <img src="${import.meta.env.VITE_API_URL}${c.imagen}"  style="width: 100%; height: auto; max-height: 300px; border-radius: 5px; object-fit: cover;" />
                             </div>
                             <p class="detalle">${c.detalle}</p>
                             <p style="margin-top: 5px; font-size: 0.9em; color: #666; margin-bottom: 0;">${c.ubicacion}</p>
@@ -84,7 +81,7 @@ function App() {
                 });
 
             // Iniciar WebSocket después de cargar todo
-            const ws = new WebSocket(`ws://${numberIP}:${port}`);
+            const ws = new WebSocket(`wss://${wss_url}`);
             ws.onmessage = (message) => {
                 const focus = JSON.parse(message.data);
                 const offsetLat = 0.01; // Adjust this value to move the map slightly upward
@@ -115,7 +112,7 @@ function App() {
                 padding: '10px',
                 borderRadius: '8px'
             }}>
-                <QRCodeSVG value={`${LocalIpFromControllerWithPort}`} size={128} fgColor={'#000000'} bgColor={'#ffffff'} title={"Steuerung öffnen"} />,
+                <QRCodeSVG value={`https://installation-map-controller.onrender.com/`} size={128} fgColor={'#000000'} bgColor={'#ffffff'} title={"Open Controller"} />,
                 <div style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center' }}>
                     🎛 Steuerung öffnen
                 </div>

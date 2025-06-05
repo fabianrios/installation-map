@@ -10,7 +10,7 @@ function ControlView() {
     const [selectedArtista, setSelectedArtista] = useState("All");
 
     useEffect(() => {
-        fetch(`http://${window.location.hostname}:5001/cases`)
+        fetch(`${import.meta.env.VITE_API_URL}/cases`)
             .then(res => res.json())
             .then(data => {
                 setCases(data);
@@ -19,7 +19,7 @@ function ControlView() {
     }, []);
 
     const focus = (c) => {
-        fetch(`http://${window.location.hostname}:5001/focus`, {
+        fetch(`${import.meta.env.VITE_API_URL}/focus`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: c.id, lat: c.lat, lng: c.lng, nombre: c.nombre })
