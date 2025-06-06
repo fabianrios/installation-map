@@ -3,6 +3,8 @@ import { FaSlidersH } from 'react-icons/fa';
 import FilterBar from '../components/FilterBar';
 import CaseCard from '../components/CaseCard';
 
+const url = import.meta.env.VITE_API_URL || 'http://localhost:5001'
+
 function ControlView() {
     const [cases, setCases] = useState([]);
     const [filtered, setFiltered] = useState([]);
@@ -10,7 +12,7 @@ function ControlView() {
     const [selectedArtista, setSelectedArtista] = useState("All");
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/cases`)
+        fetch(`${url}/cases`)
             .then(res => res.json())
             .then(data => {
                 setCases(data);
@@ -19,7 +21,7 @@ function ControlView() {
     }, []);
 
     const focus = (c) => {
-        fetch(`${import.meta.env.VITE_API_URL}/focus`, {
+        fetch(`${url}/focus`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: c.id, lat: c.lat, lng: c.lng, nombre: c.nombre })

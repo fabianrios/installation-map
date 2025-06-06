@@ -4,11 +4,11 @@ import HomeButton from './components/HomeButton';
 function GlobalLayout() {
     const location = useLocation();
 
-    // No mostramos el botón en el root
-    const showHomeButton = location.pathname !== '/';
+    // No mostramos el botón en el root o en projection view
+    const showHomeButton = location.pathname !== '/' && location.pathname !== '/projection';
 
     return (
-        <div>
+        <div className="main-container">
             {showHomeButton && <HomeButton />}
             <Outlet />
         </div>

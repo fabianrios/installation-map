@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { FaArrowLeft } from 'react-icons/fa';
 import { useTranslation } from '../LanguageContext';
 
+const url = import.meta.env.VITE_API_URL || 'http://localhost:5001'
+
 function MuralDetail() {
     const { id } = useParams();
     const navigate = useNavigate();
@@ -10,7 +12,7 @@ function MuralDetail() {
     const t = useTranslation();
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/cases/${id}`)
+        fetch(`${url}/cases/${id}`)
             .then(res => res.json())
             .then(data => {
                 setMural(data);
@@ -27,7 +29,7 @@ function MuralDetail() {
             <h2>{mural.nombre}</h2>
             <p><b>{mural.lugar}</b> ({mural.año})</p>
             <img
-                src={`${import.meta.env.VITE_API_URL}${mural.imagen}`}
+                src={`${url}${mural.imagen}`}
                 alt={mural.nombre}
                 style={{ maxWidth: '100%', borderRadius: '10px', marginBottom: '20px' }}
             />

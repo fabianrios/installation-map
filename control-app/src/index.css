@@ -72,6 +72,13 @@ button:focus-visible {
   }
 }
 
+.main-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
 select {
   width: 100%;
   min-width: 200px;

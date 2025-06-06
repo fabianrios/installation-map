@@ -1,19 +1,20 @@
 // import the caseCard.css and apply it to the component
 import '../styles/CaseCard.css'; // Assuming you have a CSS file for styles
 
+const url = import.meta.env.VITE_API_URL || 'http://localhost:5001'
 
-
-function CaseCard({ c, onFocus }) {
+function CaseCard({ c, small, onFocus }) {
     const truncatedDetalle = c.detalle.split(" ").slice(0, 20).join(" ") + (c.detalle.split(" ").length > 20 ? "…" : "");
 
+
     return (
-        <div className="case-card">
+        <div className={`case-card${small ? ' small' : ''}`}>
             <h3>{c.nombre}</h3>
             <div
                 style={{
                     width: '100%',
                     height: '200px',
-                    backgroundImage: `url(${import.meta.env.VITE_API_URL}${c.imagen})`,
+                    backgroundImage: `url(${url}${c.imagen})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     borderRadius: '8px',

@@ -4,6 +4,7 @@ import FilterBar from '../components/FilterBar';
 import { FaEye } from 'react-icons/fa';
 import CaseCard from '../components/CaseCard';
 
+const url = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
 function VisitorView() {
     const [cases, setCases] = useState([]);
@@ -13,7 +14,7 @@ function VisitorView() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/cases`)
+        fetch(`${url}/cases`)
             .then(res => res.json())
             .then(data => {
                 setCases(data);
@@ -52,7 +53,7 @@ function VisitorView() {
                         onClick={() => navigate(`/mural/${c.id}`)}
                         style={{ cursor: 'pointer' }}
                     >
-                        <CaseCard c={c} />
+                        <CaseCard small={true} c={c} />
                     </div>
                 ))}
             </div>

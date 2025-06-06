@@ -4,9 +4,10 @@ import mapboxgl from 'mapbox-gl'
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-import './App.css'
+import '../styles/ProjectionView.css'
 
-const wss_url = 'installation-map.onrender.com'
+const controllerUrl = window.location.origin;
+const wss_url = import.meta.env.VITE_API_URL.replace('http', 'ws') || 'localhost:5001';
 const api_key = import.meta.env.VITE_MAPBOX_API_KEY;
 
 const sprayDotSVG = (color) => `
@@ -81,7 +82,7 @@ function App() {
                 });
 
             // Iniciar WebSocket después de cargar todo
-            const ws = new WebSocket(`wss://${wss_url}`);
+            const ws = new WebSocket(`${wss_url}`);
             ws.onmessage = (message) => {
                 const focus = JSON.parse(message.data);
                 const offsetLat = 0.01; // Adjust this value to move the map slightly upward
@@ -112,7 +113,7 @@ function App() {
                 padding: '10px',
                 borderRadius: '8px'
             }}>
-                <QRCodeSVG value={`https://installation-map-controller.onrender.com/`} size={128} fgColor={'#000000'} bgColor={'#ffffff'} title={"Open Controller"} />,
+                <QRCodeSVG value={`${controllerUrl}`} size={128} fgColor={'#000000'} bgColor={'#ffffff'} title={"Open Controller"} />,
                 <div style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center' }}>
                     🎛 Open Controller
                 </div>
