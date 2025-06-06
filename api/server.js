@@ -40,6 +40,11 @@ app.post('/auth', (req, res) => {
     res.json({ token });
 });
 
+// test endpoint to verify server is running
+app.get('/test', (req, res) => {
+    res.json({ status: 'ok', message: 'Server is running' });
+});
+
 // Middleware to protect focus
 function verifyToken(req, res, next) {
     const token = req.headers.authorization?.split(" ")[1];
