@@ -4,7 +4,13 @@ import '../styles/CaseCard.css'; // Assuming you have a CSS file for styles
 const url = import.meta.env.VITE_API_URL || 'http://localhost:5001'
 
 function CaseCard({ c, small, onFocus }) {
-    const truncatedDetalle = c.detalle.split(" ").slice(0, 20).join(" ") + (c.detalle.split(" ").length > 20 ? "…" : "");
+    const detalle =
+        c.idioma === "en" && c.detalle_en
+            ? c.detalle_en
+            : c.idioma === "de" && c.detalle_de
+                ? c.detalle_de
+                : c.detalle;
+    const truncatedDetalle = detalle.split(" ").slice(0, 20).join(" ") + (detalle.split(" ").length > 20 ? "…" : "");
 
 
     return (
