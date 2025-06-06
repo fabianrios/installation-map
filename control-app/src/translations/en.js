@@ -4,7 +4,7 @@ const en = {
     navigate: "Explore",
     riddleTitle: "Control mode access",
     riddleGermany: "Which village in Germany hosted the mural intervention?",
-    riddleColombia: "In which city and place in Colombia was the prints on the walls done?",
+    riddleColombia: "In which city and place in Colombia was the prints on the walls done? (city, place)",
     inputPlaceholder: "Type your answer...",
     submit: "Submit",
     error: "Wrong answer. Try again.",
@@ -15,6 +15,7 @@ const en = {
     viewDetails: "View details",
     back: "Back",
     loading: "Loading...",
+    donate: "Donate",
 };
 
 export default en;

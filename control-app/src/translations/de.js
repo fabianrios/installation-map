@@ -4,7 +4,7 @@ const de = {
     navigate: "Entdecken",
     riddleTitle: "Zugang zum Steuerungsmodus",
     riddleGermany: "Welches Dorf in Deutschland beherbergte die Wandmalerei-Intervention?",
-    riddleColombia: "In welcher Stadt und an welchem Ort in Kolumbien wurde die Drücke an den Wänden gemacht?",
+    riddleColombia: "In welcher Stadt und an welchem Ort in Kolumbien wurde die Drücke an den Wänden gemacht? (Stadt, Ort)",
     submit: "Enviar",
     error: "Respuesta incorrecta. Intenta de nuevo.",
     serverError: "Error del servidor.",
@@ -15,6 +15,7 @@ const de = {
     viewDetails: "Details anzeigen",
     back: "Zurück",
     loading: "Laden...",
+    donate: "Spenden",
 };
 
 export default de;

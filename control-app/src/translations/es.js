@@ -4,7 +4,7 @@ const es = {
     navigate: "Navegar",
     riddleTitle: "Acceso al modo de control",
     riddleGermany: "¿Qué pueblo en Alemania albergó la intervención mural?",
-    riddleColombia: "¿En qué ciudad y lugar de Colombia se hicieron las impresiónes en las paredes?",
+    riddleColombia: "¿En qué ciudad y lugar de Colombia se hicieron las impresiónes en las paredes? (ciudad, lugar)",
     submit: "Enviar",
     error: "Respuesta incorrecta. Intenta de nuevo.",
     serverError: "Error del servidor.",
@@ -15,6 +15,7 @@ const es = {
     viewDetails: "Ver detalles",
     back: "Volver",
     loading: "Cargando...",
+    donate: "Donar",
 };
 
 export default es;

@@ -73,13 +73,25 @@ app.get('/cases/:id', (req, res) => {
 let currentFocus = null;
 const wsClients = new Set();
 
+let lastFocusTime = 0;
+const FOCUS_COOLDOWN_MS = 2000; // Allow 1 focus command per second
+
 app.post('/focus', verifyToken, (req, res) => {
-    currentFocus = { ...req.body, timestamp: Date.now() };
+    const now = Date.now();
+    if (now - lastFocusTime < FOCUS_COOLDOWN_MS) {
+        console.log('Focus request dropped due to cooldown');
+        return res.status(429).json({ error: 'Too many requests' });
+    }
+
+    lastFocusTime = now;
+
+    currentFocus = { ...req.body, timestamp: now };
     console.log('New focus:', currentFocus);
 
     wsClients.forEach(ws => ws.send(JSON.stringify(currentFocus)));
     res.json({ status: 'ok' });
 });
+
 
 // Start server + WebSocket
 const server = app.listen(PORT, () => {
