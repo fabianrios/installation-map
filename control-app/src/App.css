@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+body {
+ color: black;
+}
+
+p {
+  color: black;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
