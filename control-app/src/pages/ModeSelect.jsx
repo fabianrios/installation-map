@@ -36,9 +36,9 @@ function ModeSelect() {
                     fgColor={'#000000'}
                     bgColor={'#ffffff'}
                 />
-                <div style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center' }}>
+                <p style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center', margin: '2px' }}>
                     {t.donate}
-                </div>
+                </p>
             </div>
         </div>
     );
