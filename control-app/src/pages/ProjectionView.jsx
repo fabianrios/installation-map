@@ -115,7 +115,7 @@ function App() {
                 borderRadius: '8px'
             }}>
                 <QRCodeSVG value={`${controllerUrl}`} size={128} fgColor={'#000000'} bgColor={'#ffffff'} title={"Open Controller"} />,
-                <div style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center' }}>
+                <div style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center', color: '#000000' }}>
                     🎛 Open Controller
                 </div>
             </div>
