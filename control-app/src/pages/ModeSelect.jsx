@@ -9,7 +9,8 @@ function ModeSelect() {
 
     return (
         <div className="mode-container">
-            <h1>Street Art Map</h1>
+            <h1>Toxicómano</h1>
+            <h2>Resistance in public space</h2>
             <div className="mode-button-group">
                 <button className="mode-button" onClick={() => navigate('/visitor')}>
                     <FaEye /> {t.navigate}

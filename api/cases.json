@@ -177,6 +177,7 @@
     "lng": -74.1502,
     "año": 2025,
     "detalle": "Paisaje rojo en lugar de verde, dialoga sobre la relación entre la ciudad y la naturaleza, en un contexto crucial para el abastecimiento de agua en Bogotá.",
+    "detalle_en": "Red landscape instead of green, dialogues about the relationship between the city and nature, in a crucial context for water supply in Bogotá.",
     "tipo": "Street Art",
     "creditos": "Eski-bel, Muerto, Extramural, Verde Color Café, SoulArt Fest",
     "imagen": "/images/el_jardin_de_thanatos.jpg"
@@ -190,6 +191,7 @@
     "lng": -74.0708,
     "año": 2023,
     "detalle": "Transmite un mensaje de calma y tranquilidad en medio del caos urbano.",
+    "detalle_en": "Conveys a message of calm and tranquility amidst urban chaos.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/take_it_easy.jpg"
@@ -203,6 +205,7 @@
     "lng": -74.0712,
     "año": 2023,
     "detalle": "Refleja la realidad de los trabajos difíciles y poco valorados.",
+    "detalle_en": "Reflects the reality of difficult and undervalued jobs.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/trabajo_sucio.jpg"
@@ -216,6 +219,7 @@
     "lng": -74.0785,
     "año": 2023,
     "detalle": "Promueve la lectura como una actividad placentera y enriquecedora.",
+    "detalle_en": "Promotes reading as a pleasurable and enriching activity.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/to_read_is_tasty.jpg"
@@ -229,6 +233,7 @@
     "lng": -75.5636,
     "año": 2017,
     "detalle": "Homenaje al escritor y filósofo colombiano Fernando González y su legado cultural.",
+    "detalle_en": "Tribute to Colombian writer and philosopher Fernando González and his cultural legacy.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/fernando_gonzalez.jpg"
@@ -242,6 +247,7 @@
     "lng": -75.5174,
     "año": 2025,
     "detalle": "Celebra la identidad cultural y deportiva de Manizales, destacando su papel en la vida social.",
+    "detalle_en": "Celebrates the cultural and sporting identity of Manizales, highlighting its role in social life.",
     "tipo": "Street Art",
     "creditos": "Sepc",
     "imagen": "/images/cultura.jpg"
@@ -255,6 +261,7 @@
     "lng": -75.5138,
     "año": 2025,
     "detalle": "Destaca la historia y la identidad de la ciudad como patrimonio cultural de Manizales.",
+    "detalle_en": "Highlights the history and identity of the city as a cultural heritage of Manizales.",
     "tipo": "Street Art",
     "creditos": "Sepc",
     "imagen": "/images/patrimonio.jpg"
@@ -268,6 +275,7 @@
     "lng": -74.0636,
     "año": 2024,
     "detalle": "Resalta la importancia de estar preparado con argumentos en cualquier situación.",
+    "detalle_en": "Highlights the importance of being prepared with arguments in any situation.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/arguments.jpg"
@@ -281,6 +289,7 @@
     "lng": 8.6136,
     "año": 2018,
     "detalle": "Desafía los estándares sociales y culturales, resaltando el mestizaje como fuerza vigente.",
+    "detalle_en": "Challenges social and cultural standards, highlighting mestizaje as a living force.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/mestizaje.jpg"
@@ -294,6 +303,7 @@
     "lng": -74.0851,
     "año": 2021,
     "detalle": "Honra a las 13 víctimas de desaparición forzada en 1982, cada pincelada representa la lucha de sus familiares por la verdad.",
+    "detalle_en": "Honors the 13 victims of forced disappearance in 1982, each brushstroke represents the struggle of their families for the truth.",
     "tipo": "Street Art",
     "creditos": "Comisión de la Verdad, Colectivo Social Beligerarte",
     "imagen": "/images/mural_colectivo82.jpg"
@@ -307,6 +317,7 @@
     "lng": -74.093,
     "año": 2019,
     "detalle": "Mural censurado que denunciaba los falsos positivos. La intervención militar impidió su culminación y generó un símbolo de resistencia.",
+    "detalle_en": "Censored mural denouncing false positives. The military intervention prevented its completion, generating a symbol of resistance.",
     "tipo": "Street Art",
     "creditos": "Artistas urbanos anónimos",
     "imagen": "/images/quien_dio_la_orden.jpg"
@@ -320,6 +331,7 @@
     "lng": -74.0840,
     "año": 2023,
     "detalle": "Aborda la lucha de los migrantes y el derecho a permanecer en tierras ajenas, resaltando que migrar es una necesidad, no una elección.",
+    "detalle_en": "Addresses the struggle of migrants and the right to remain in foreign lands, highlighting that migrating is a necessity, not a choice.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/emigro_luego_existo.jpg"
@@ -333,6 +345,7 @@
     "lng": -74.0758,
     "año": 2023,
     "detalle": "Critica el colonialismo y sus consecuencias, abordando la discriminación, xenofobia y pérdida de culturas ancestrales.",
+    "detalle_en": "Critiques colonialism and its consequences, addressing discrimination, xenophobia, and the loss of ancestral cultures.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/anticolonial.jpg"
@@ -346,8 +359,9 @@
     "lng": -80.1918,
     "año": 2024,
     "detalle": "Celebra la fuerza y el legado de la cultura afro-latina, destacando su diversidad y resistencia cultural en Little Havana.",
+    "detalle_en": "Celebrates the strength and legacy of Afro-Latin culture, highlighting its diversity and cultural resilience in Little Havana.",
     "tipo": "Street Art",
-    "creditos": "Toxicómano Callejero, Calle Ocho Murals",
+    "creditos": "Toxicómano, Calle Ocho Murals",
     "imagen": "/images/afro_latin_power.jpg"
   },
   {
@@ -359,6 +373,7 @@
     "lng": 4.8357,
     "año": 2023,
     "detalle": "Reflexiona sobre la tolerancia y el equilibrio social, utilizando el refrán 'Il ne faut pas pousser mémé dans les orties'.",
+    "detalle_en": "Reflects on tolerance and social balance, using the saying 'Il ne faut pas pousser mémé dans les orties'.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/je_suis_voltaire.jpg"
@@ -372,6 +387,7 @@
     "lng": -74.1130,
     "año": 2023,
     "detalle": "Celebra la identidad y resistencia de los barrios populares, resaltando el orgullo comunitario de Engativá.",
+    "detalle_en": "Celebrates the identity and resilience of popular neighborhoods, highlighting the community pride of Engativá.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/barrio_eterno.jpg"
@@ -385,8 +401,9 @@
     "lng": -73.9339,
     "año": 2024,
     "detalle": "Invita a disfrutar la vida con tranquilidad en medio de las adversidades cotidianas.",
+    "detalle_en": "Invites to enjoy life with tranquility amidst everyday adversities.",
     "tipo": "Street Art",
-    "creditos": "Toxicómano Callejero",
+    "creditos": "Toxicómano",
     "imagen": "/images/vivir_sabroso.jpg"
   },
   {
@@ -398,8 +415,9 @@
     "lng": -74.0300,
     "año": 2023,
     "detalle": "Denuncia la impunidad en crímenes de alto impacto a través de una poderosa protesta visual.",
+    "detalle_en": "Denounces impunity in high-impact crimes through a powerful visual protest.",
     "tipo": "Street Art",
-    "creditos": "Toxicómano Callejero, Hard, Dj Lu",
+    "creditos": "Toxicómano, Hard, Dj Lu",
     "imagen": "/images/el_autor_intelectual.jpg"
   },
   {
@@ -411,21 +429,9 @@
     "lng": -74.0817,
     "año": 2024,
     "detalle": "Homenaje al legado de Martin Luther King en la lucha por los derechos civiles y la igualdad.",
+    "detalle_en": "Tribute to Martin Luther King's legacy in the fight for civil rights and equality.",
     "tipo": "Street Art",
-    "creditos": "Toxicómano Callejero",
+    "creditos": "Toxicómano",
     "imagen": "/images/tributo_mlk.jpg"
-  },
-  {
-    "id": 33,
-    "nombre": "6402 - Los falsos positivos",
-    "lugar": "Bogotá",
-    "ubicacion": "Diversos espacios",
-    "lat": 4.65,
-    "lng": -74.08,
-    "año": 2025,
-    "detalle": "Recuerda los 6402 casos de civiles asesinados y presentados falsamente como bajas en combate durante el conflicto armado colombiano.",
-    "tipo": "Street Art",
-    "creditos": "Diversos colectivos",
-    "imagen": "/images/6402.jpg"
   }
 ]

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { FaSlidersH } from 'react-icons/fa';
 import FilterBar from '../components/FilterBar';
 import CaseCard from '../components/CaseCard';
+import '../styles/ControlView.css';
 
 const url = import.meta.env.VITE_API_URL || 'http://localhost:5001'
 
@@ -42,8 +43,8 @@ function ControlView() {
 
     return (
         <div style={{ padding: '20px' }}>
-            <h1>Map controller <FaSlidersH/></h1>
-
+            <h1>Toxicómano</h1>
+            <h2>Resistance in public space <FaSlidersH className="svg"/></h2>
             <FilterBar
                 lugares={lugares}
                 artistas={artistas}

@@ -36,7 +36,8 @@ function VisitorView() {
 
     return (
         <div style={{ padding: '20px' }}>
-            <h1>Modo Navegación <FaEye /></h1>
+            <h1>Toxicómano</h1>
+            <h2>Resistance in public space <FaEye className="svg"/></h2>
 
             <FilterBar
                 lugares={lugares}
