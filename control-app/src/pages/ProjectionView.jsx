@@ -56,6 +56,7 @@ function App() {
                               <img src="${import.meta.env.VITE_API_URL}${c.imagen}"  style="width: 100%; height: auto; max-height: 300px; border-radius: 5px; object-fit: cover;" />
                             </div>
                             <p class="detalle">${c.detalle}</p>
+                            ${c.detalle_en ? `...<p class="detalle">${c.detalle_en}</p>` : ""}
                             <p style="margin-top: 5px; font-size: 0.9em; color: #666; margin-bottom: 0;">${c.ubicacion}</p>
                           </div>
                         `;

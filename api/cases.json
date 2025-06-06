@@ -8,6 +8,7 @@
     "lng": -75.5138,
     "año": 2025,
     "detalle": "Retrato de una niña afrocolombiana sobre un fondo amarillo claro, resaltando la diversidad y la identidad cultural.",
+    "detalle_en": "Portrait of an Afro-Colombian girl on a light yellow background, highlighting diversity and cultural identity.",
     "tipo": "Street Art",
     "creditos": "Sepc",
     "imagen": "/images/sepc_mural.jpg"
@@ -21,6 +22,7 @@
     "lng": -74.0851,
     "año": 2012,
     "detalle": "Homenaje a las víctimas de desapariciones forzadas y violencia política en Colombia.",
+    "detalle_en": "Tribute to the victims of forced disappearances and political violence in Colombia.",
     "tipo": "Street Art",
     "creditos": "ARK y Chirrete Golden",
     "imagen": "/images/memoria_mural.jpeg"
@@ -34,6 +36,7 @@
     "lng": -75.6016,
     "año": 2025,
     "detalle": "Visibiliza la lucha de las madres de desaparecidos durante la Operación Orión.",
+    "detalle_en": "Highlights the struggle of mothers of the disappeared during Operation Orion.",
     "tipo": "Street Art",
     "creditos": "Colectivo Fuerza y Graffiti",
     "imagen": "/images/cuchas_mural.avif"
@@ -47,6 +50,7 @@
     "lng": -74.0760,
     "año": 2024,
     "detalle": "Instalación con botas pintadas por las Madres de Soacha en memoria de los falsos positivos.",
+    "detalle_en": "Installation with boots painted by the Madres de Soacha in memory of the false positives.",
     "tipo": "Instalación de memoria",
     "creditos": "Madres de Soacha",
     "imagen": "/images/botas.webp"
@@ -60,6 +64,7 @@
     "lng": -74.1000,
     "año": 2016,
     "detalle": "Expresa el deseo de paz durante las negociaciones entre el gobierno y las FARC.",
+    "detalle_en": "Expresses the desire for peace during the negotiations between the government and FARC.",
     "tipo": "Street Art",
     "creditos": "Seb Toussaint",
     "imagen": "/images/paz_mural.jpg"
@@ -73,6 +78,7 @@
     "lng": -74.0800,
     "año": 2013,
     "detalle": "Representación visual de la memoria colectiva de las víctimas del conflicto armado.",
+    "detalle_en": "Visual representation of the collective memory of the victims of the armed conflict.",
     "tipo": "Street Art",
     "creditos": "Santos Sepulcros",
     "imagen": "/images/santos_sepulcros_mural.jpg"
@@ -86,6 +92,7 @@
     "lng": -74.0488,
     "año": 2013,
     "detalle": "Refleja la esperanza y resiliencia de las comunidades urbanas.",
+    "detalle_en": "Reflects the hope and resilience of urban communities.",
     "tipo": "Street Art",
     "creditos": "Elliot Tupac",
     "imagen": "/images/tejiendo_esperanza.jpg"
@@ -99,6 +106,7 @@
     "lng": -74.0833,
     "año": 2013,
     "detalle": "Representa las huellas de la memoria y la resistencia, rinde homenaje a Jaime Garzón.",
+    "detalle_en": "Represents the footprints of memory and resistance, pays tribute to Jaime Garzón.",
     "tipo": "Street Art",
     "creditos": "Bicromo, Un pueblo un mural, Fonso",
     "imagen": "/images/pisadas.jpg"
@@ -112,6 +120,7 @@
     "lng": -74.0817,
     "año": 2014,
     "detalle": "Crítica social a través del característico estilo stencil.",
+    "detalle_en": "Social critique through the characteristic stencil style.",
     "tipo": "Street Art",
     "creditos": "DjLu",
     "imagen": "/images/el_conde.jpg"
@@ -125,6 +134,7 @@
     "lng": -74.0583,
     "año": 2013,
     "detalle": "Denuncia las condiciones laborales de los mineros en Colombia.",
+    "detalle_en": "Denounces the working conditions of miners in Colombia.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/minero.png"
@@ -138,6 +148,7 @@
     "lng": -74.0848,
     "año": 2013,
     "detalle": "Crítica al impacto ambiental del uso de combustibles fósiles.",
+    "detalle_en": "Critique of the environmental impact of fossil fuel use.",
     "tipo": "Street Art",
     "creditos": "DjLu",
     "imagen": "/images/combustible_fosil.jpg"
@@ -151,6 +162,7 @@
     "lng": -74.0820,
     "año": 2013,
     "detalle": "Promueve un mensaje de no violencia y respeto.",
+    "detalle_en": "Promotes a message of non-violence and respect.",
     "tipo": "Street Art",
     "creditos": "Ceroker, DjLu, Toxicómano",
     "imagen": "/images/cero_maltrato.jpg"
@@ -164,6 +176,7 @@
     "lng": -74.0647,
     "año": 2018,
     "detalle": "Retrata temas de violencia y observación en el espacio urbano.",
+    "detalle_en": "Depicts themes of violence and observation in urban space.",
     "tipo": "Street Art",
     "creditos": "Toxicómano",
     "imagen": "/images/man_filming_woman_attacked_lizard.jpg"
