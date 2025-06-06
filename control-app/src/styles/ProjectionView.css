@@ -22,6 +22,20 @@
     color: #1a1a1a;
 }
 
+.mapboxgl-popup-content h3 {
+    font-size: 2rem;
+}
+
+.mapboxgl-popup-content h4 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+}
+
+.mapboxgl-popup-content p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
 #map-container {
     height: 100%;
     width: 100%;
