@@ -4,6 +4,8 @@ import { useTranslation } from '../LanguageContext';
 import {QRCodeSVG} from "qrcode.react";
 import '../styles/ModeSelect.css';
 
+const donateUrl = "https://www.paypal.com/pool/9fJoUV3aOo";
+
 function ModeSelect() {
     const navigate = useNavigate();
     const t = useTranslation();
@@ -31,13 +33,13 @@ function ModeSelect() {
                 zIndex: 999
             }}>
                 <QRCodeSVG
-                    value="https://www.paypal.com/pools/c/9fuabbv5cW"
+                    value={donateUrl}
                     size={100}
                     fgColor={'#000000'}
                     bgColor={'#ffffff'}
                 />
                 <a
-                    href="https://www.paypal.com/pools/c/9fuabbv5cW"
+                    href={donateUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{ fontSize: '0.8em', marginTop: '5px', textAlign: 'center', margin: '2px', color: '#000000', display: 'block', textDecoration: 'underline' }}
