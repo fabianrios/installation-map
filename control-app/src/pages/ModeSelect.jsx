@@ -4,7 +4,7 @@ import { useTranslation } from '../LanguageContext';
 import {QRCodeSVG} from "qrcode.react";
 import '../styles/ModeSelect.css';
 
-const donateUrl = "https://www.paypal.com/pool/9fJoUV3aOo";
+const donateUrl = "https://www.paypal.com/pool/9fJrInFf1U";
 
 function ModeSelect() {
     const navigate = useNavigate();
